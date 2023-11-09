@@ -15,6 +15,35 @@
 .pres {
     font-size: 20px;
     margin: 6px;
+    text-align: center; 
+    height: 20px;
+    transition: margin-left 0.5s ease;
+}
+
+.pres.show {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.pres.show .dot{
+    opacity: 1;
+}
+
+.dot {
+    color: white;
+    background: none;
+    opacity: 1;
+    display: inline-block; /* Añade esta propiedad */
+    vertical-align: middle; /* Añade esta propiedad */
+    transition: opacity 0.5s ease;
+    z-index: 100;
+    vertical-align: top;
+    text-align: left;
+}
+
+.content p {
+    display: block;
+    margin-top: 10px;
 }
 
 body {
@@ -227,6 +256,5 @@ input[type="submit"]:active
 		height: calc(20vw - 2px);
 	}
 }
-
 
 
