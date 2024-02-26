@@ -12,13 +12,27 @@ import FormInputs from './components/FormInputs/FormInputs';
 import Button from './components/Button/Button';
 
 function page() {
+  function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+  
+  if(typeof window !== 'undefined') {
+     window.onload = function () {
+      if (isMobileDevice()) {
+        alert("¡Alerta! Disculpa, ésta página no es compatible con dispositivos móviles aún, prueba ingresar desde una computadora o en modo 'sitio para computadoras'. Estoy trabajando para que esto sea posible lo mas pronto posible. Gracias. Santiago Iannello.");
+         window.location.replace('https://www.google.com');
+       }
+    };
+  }
+  
+
   return (
     <div className="h-screen w-screen overflow-x-hidden overflow-y-scroll bg-gradient-to-t from-customBlueGray_1 to-customBlueGray_2">
       <div>
         <Header />
         {/* Aca abajo va mt-32 si hago andar el tema del header con la current section */}
-        <div className="mb-16 mt-14 flex flex-row">
-          <div className="ml-20 mt-10 font-black text-white">
+        <div className="mb-16 mt-14 lg:flex lg:flex-row">
+          <div className="lg:ml-20 mt-10 font-black text-white">
             <div className="flex flex-row gap-1.5 text-sm">
               <h4 className="">Hola,</h4>
               <h4 className="text-green-700">mi nombre es</h4>
@@ -49,7 +63,7 @@ function page() {
             </div>
             <DownloadButton />
           </div>
-          <div className="ml-24 mt-8">
+          <div className="lg:ml-24 mt-8">
             <Link href={'https://www.instagram.com/santi.iannello/'}>
               <Image
                 src={'./foto/santiago.jpg'}
