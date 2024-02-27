@@ -18,7 +18,6 @@ function Caja({
   images,
 }: Props) {
   return (
-    // febwfewpbpfwebfwfbupeewubweuibeeufbewufuiwp
     <div className={`h-72 w-60 rounded-lg bg-gray-900 text-white shadow-2xl hover:border border-green-700`}>
       <div className="flex justify-center">
         <p className="mb-2 mt-4 text-sm font-bold">{title}</p>

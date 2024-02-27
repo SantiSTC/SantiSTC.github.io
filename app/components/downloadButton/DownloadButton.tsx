@@ -6,11 +6,12 @@ const DownloadButton = () => {
   const handleDownload = () => {
 
     // Enlace al PDF en la carpeta public
-    const pdfPath = './docs/cv.pdf';
+    const pdfPath = '/docs/cv.pdf';
 
+    // Crear un enlace temporal y hacer clic para iniciar la descarga
     const link = document.createElement('a');
     link.href = pdfPath;
-    link.download = 'cv_santiago_iannello.pdf'; 
+    link.download = 'cv_santiago_iannello.pdf'; // Puedes cambiar el nombre del archivo si lo deseas
     link.click();
   };
 
