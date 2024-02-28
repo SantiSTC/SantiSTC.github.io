@@ -6,12 +6,12 @@ import Header from './components/header/Header';
 import Linea from './components/linea/Linea';
 import Caja from './components/caja/Caja';
 import DownloadButton from './components/downloadButton/DownloadButton';
-import Logo from './components/Logo/Logo';
-import CajaSmall from './components/CajaSmall/CajaSmall';
+import Logo from './components/logo/Logo';
+import CajaSmall from './components/cajasmall/CajaSmall';
 import FormInputs from './components/FormInputs/FormInputs';
-import Button from './components/Button/Button';
+import Button from './components/button/Button';
 import React, { useEffect, useRef, useState } from 'react';
-import { Reveal } from './components/Reveal/Reveal';
+import { Reveal } from './components/reveal/Reveal';
 
 function page() {
   return (
