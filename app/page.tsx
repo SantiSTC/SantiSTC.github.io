@@ -1,17 +1,16 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import Flecha from './components/flecha/Flecha';
-import Header from './components/header/Header';
-import Linea from './components/linea/Linea';
-import Caja from './components/caja/Caja';
-import DownloadButton from './components/downloadButton/DownloadButton';
-import Logo from './components/logo/Logo';
-import CajaSmall from './components/cajasmall/CajaSmall';
-import FormInputs from './components/FormInputs/FormInputs';
-import Button from './components/button/Button';
-import React, { useEffect, useRef, useState } from 'react';
-import { Reveal } from './components/reveal/Reveal';
+import Flecha from './components/flecha/Flecha.tsx';
+import Header from './components/header/Header.tsx';
+import Linea from './components/linea/Linea.tsx';
+import Caja from './components/caja/Caja.tsx';
+import DownloadButton from './components/downloadButton/DownloadButton.tsx';
+import Logo from './components/logo/Logo.tsx';
+import CajaSmall from './components/cajasmall/CajaSmall.tsx';
+import FormInputs from './components/FormInputs/FormInputs.tsx';
+import Button from './components/Button/Button.tsx';
+import Reveal from './components/Reveal/Reveal.tsx';
 
 function page() {
   return (
