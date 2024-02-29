@@ -23,7 +23,7 @@ function Page() {
       <div>
         <Header />
         {/* Aca abajo va mt-32 si hago andar el tema del header con la current section */}
-        <div className="mb-16 mt-14 lg:flex lg:flex-row">
+        <div className="mb-16 mt-28 lg:flex lg:flex-row">
           <div className="lg:ml-20 mt-10 font-black text-white">
           <Reveal>
           <div className="flex flex-row gap-1.5 text-sm">
