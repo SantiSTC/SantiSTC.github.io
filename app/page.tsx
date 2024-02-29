@@ -2,15 +2,15 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Flecha from './components/Flecha/Flecha';
-import Header from './components/Header/Header';
-import Linea from './components/Linea/Linea';
-import Caja from './components/Caja/Caja';
-import DownloadButton from './components/DownloadButton/DownloadButton';
-import Logo from './components/Logo/Logo';
-import CajaSmall from './components/CajaSmall/CajaSmall';
-import FormInputs from './components/FormInputs/FormInputs';
-import Button from './components/Button/Button';
+import Flecha from './components/Flecha/Flecha.tsx';
+import Header from './components/Header/Header.tsx';
+import Linea from './components/Linea/Linea.tsx';
+import Caja from './components/Caja/Caja.tsx';
+import DownloadButton from './components/DownloadButton/DownloadButton.tsx';
+import Logo from './components/Logo/Logo.tsx';
+import CajaSmall from './components/CajaSmall/CajaSmall.tsx';
+import FormInputs from './components/FormInputs/FormInputs.tsx';
+import Button from './components/Button/Button.tsx';
 import { Reveal } from './components/Reveal/Reveal';
 import { useTranslation } from 'react-i18next';
 import "../i18n"
