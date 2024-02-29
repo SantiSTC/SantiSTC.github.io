@@ -22,7 +22,7 @@ function Caja({
   const { t } = useTranslation();
 
   return (
-    <div className={`h-72 w-60 rounded-lg bg-gray-900 text-white shadow-2xl hover:border border-green-700`}>
+    <div className={`h-72 w-60 flex flex-col rounded-lg bg-gray-900 text-white shadow-2xl hover:border border-green-700`}>
       <div className="flex justify-center">
         <p className="mb-2 mt-4 text-sm font-bold">{title}</p>
       </div>
@@ -31,7 +31,7 @@ function Caja({
         <p className="leading-relaxed text-xs">{description}</p>
         <p className="mb-6 mt-3 text-xs">{t('experiencia_manejode')}</p>
       </div>
-      <div className="mt-auto">
+      <div className="mt-auto mb-2">
         <div className="flex flex-row justify-center gap-3 mb-4">
           {images?.map((image, index) => (
             <Image key={index} src={image} alt={''} width={20} height={20} />
