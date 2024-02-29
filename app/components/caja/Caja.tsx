@@ -31,14 +31,16 @@ function Caja({
         <p className="leading-relaxed text-xs">{description}</p>
         <p className="mb-6 mt-3 text-xs">{t('experiencia_manejode')}</p>
       </div>
-      <div className="flex flex-row justify-center gap-3 mb-4">
-        {images?.map((image, index) => (
-          <Image key={index} src={image} alt={''} width={20} height={20} />
-        ))}
+      <div className="mt-auto">
+        <div className="flex flex-row justify-center gap-3 mb-4">
+          {images?.map((image, index) => (
+            <Image key={index} src={image} alt={''} width={20} height={20} />
+          ))}
+        </div>
+        <Link href={repository} className="ml-4 mt-4 underline text-xs hover:text-green-700">
+          {t('experiencia_vermas')}
+        </Link>
       </div>
-      <Link href={repository} className="ml-4 mt-4 underline text-xs hover:text-green-700">
-        {t('experiencia_vermas')}
-      </Link>
     </div>
   );
 }
