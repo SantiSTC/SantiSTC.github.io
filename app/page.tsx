@@ -308,7 +308,7 @@ function page() {
                 </div>
               </div>
               <Button />
-              <input type="hidden" name='_next' value={"http://localhost:3000"} />
+              <input type="hidden" name='_next' value={"https://santistc.github.io"} />
               <input type="hidden" name='_captcha' value={"false"} />
             </form>
           </Reveal>
