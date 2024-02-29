@@ -294,7 +294,7 @@ function Page() {
                     id={"mensaje"}
                     name={"mensaje"}
                     placeholder={t('form_mensaje_title')}
-                    className={`mt-1 h-32 w-72 text-sm rounded-md border-none bg-gray-800 p-2 text-white focus:placeholder-transparent focus:outline-none`}
+                    className={`text-sm align-top mt-1 pb-32 w-72 text-sm rounded-md border-none bg-gray-800 p-2 text-white focus:placeholder-transparent focus:outline-none`}
                   />
                 </div>
               </div>
