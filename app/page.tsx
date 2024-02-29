@@ -15,7 +15,7 @@ import { Reveal } from './components/Reveal/Reveal';
 import { useTranslation } from 'react-i18next';
 import "../i18n"
 
-function page() { 
+function Page() { 
   const { t } = useTranslation();
 
   return (
@@ -355,4 +355,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
