@@ -16,11 +16,7 @@ import { useTranslation } from 'react-i18next';
 import "../i18n"
 
 function page() { 
-  const { t, i18n } = useTranslation();
-
-  const cambiarIdioma = (nuevoIdioma:string) => {
-    i18n.changeLanguage(nuevoIdioma);
-  };
+  const { t } = useTranslation();
 
   return (
     <div className="h-screen w-screen overflow-x-hidden overflow-y-scroll bg-gradient-to-t from-customBlueGray_1 to-customBlueGray_2">

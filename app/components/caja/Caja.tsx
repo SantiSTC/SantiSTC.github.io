@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
@@ -19,10 +20,7 @@ function Caja({
   repository,
   images,
 }: Props) {
-  const { t, i18n } = useTranslation();
-  const cambiarIdioma = (nuevoIdioma:string) => {
-    i18n.changeLanguage(nuevoIdioma);
-  };
+  const { t } = useTranslation();
 
   return (
     <div className={`h-72 w-60 rounded-lg bg-gray-900 text-white shadow-2xl hover:border border-green-700`}>
