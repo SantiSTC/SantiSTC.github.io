@@ -289,12 +289,12 @@ function Page() {
               <FormInputs title={t('form_asunto_title')} id={'asunto'} name={'asunto'} placeholder={t('form_asunto_placeholder')} type={'text'} />
               <div className="mb-8 flex flex-col">
                 <div className='flex flex-col'>
-                  <label htmlFor={"mensaje"} className="text-white text-sm">{t('form_mensaje_title')}</label>
                   <input
                     type={"text"}
                     id={"mensaje"}
                     name={"mensaje"}
-                    className={`mt-1 h-32 w-72 rounded-md border border-green-700 bg-transparent p-2 text-white focus:placeholder-transparent focus:outline-none`}
+                    placeholder={t('form_mensaje_title')}
+                    className={`mt-1 h-32 w-72 rounded-md border-none bg-gray-800 p-2 text-white focus:placeholder-transparent focus:outline-none`}
                   />
                 </div>
               </div>
