@@ -15,7 +15,6 @@ function FormInputs({
 }: Props) {
   return (
     <div className="mb-8 flex flex-col text-sm">
-      <label htmlFor={id} className="text-white ">{title}</label>
       <input
         type={type}
         id={id}
