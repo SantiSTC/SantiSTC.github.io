@@ -294,12 +294,12 @@ function Page() {
                     id={"mensaje"}
                     name={"mensaje"}
                     placeholder={t('form_mensaje_title')}
-                    className={`text-sm align-top mt-1 pb-32 w-72 text-sm rounded-md border-none bg-gray-800 p-2 text-white focus:placeholder-transparent focus:outline-none`}
+                    className={`text-sm align-top mt-1 pb-32 w-72 text-sm rounded-md border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none`}
                   />
                 </div>
               </div>
               <Button />
-              <input type="hidden" name='_next' value={"http://localhost:3000"} />
+              <input type="hidden" name='_next' value={"https://santistc.github.io"} />
               <input type="hidden" name='_captcha' value={"false"} />
             </form>
           </Reveal>
