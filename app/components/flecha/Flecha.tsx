@@ -5,7 +5,7 @@ function Flecha() {
   return (
     <Image
       id="animatedImage"
-      src={'./icons/flecha.png'}
+      src={'/icons/flecha.png'}
       alt={''}
       width={50}
       height={50}

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import "../../../i18n"
 
 interface Props {
   title: string;
@@ -17,6 +19,11 @@ function Caja({
   repository,
   images,
 }: Props) {
+  const { t, i18n } = useTranslation();
+  const cambiarIdioma = (nuevoIdioma:string) => {
+    i18n.changeLanguage(nuevoIdioma);
+  };
+
   return (
     <div className={`h-72 w-60 rounded-lg bg-gray-900 text-white shadow-2xl hover:border border-green-700`}>
       <div className="flex justify-center">
@@ -25,7 +32,7 @@ function Caja({
       <div className="ml-4 mr-4">
         <p className="mb-2 font-semibold italic text-green-700 text-xs">{position}</p>
         <p className="leading-relaxed text-xs">{description}</p>
-        <p className="mb-6 mt-3 text-xs">Manejo de:</p>
+        <p className="mb-6 mt-3 text-xs">{t('experiencia_manejode')}</p>
       </div>
       <div className="flex flex-row justify-center gap-3 mb-4">
         {images?.map((image, index) => (
@@ -33,7 +40,7 @@ function Caja({
         ))}
       </div>
       <Link href={repository} className="ml-4 mt-4 underline text-xs hover:text-green-700">
-          Ver mas acá.
+        {t('experiencia_vermas')}
       </Link>
     </div>
   );

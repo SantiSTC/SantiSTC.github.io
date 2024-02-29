@@ -1,22 +1,26 @@
 "use client"
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import "../../../i18n"
 
 const DownloadButton = () => {
   const handleDownload = () => {
-
-    // Enlace al PDF en la carpeta public
     const pdfPath = '/docs/cv.pdf';
 
-    // Crear un enlace temporal y hacer clic para iniciar la descarga
     const link = document.createElement('a');
     link.href = pdfPath;
-    link.download = 'cv_santiago_iannello.pdf'; // Puedes cambiar el nombre del archivo si lo deseas
+    link.download = 'cv_santiago_iannello.pdf';
     link.click();
   };
 
+  const { t, i18n } = useTranslation();
+  const cambiarIdioma = (nuevoIdioma:string) => {
+    i18n.changeLanguage(nuevoIdioma);
+  };
+
   return (
-    <button onClick={handleDownload} className='rounded-2xl border border-green-700 p-3 text-sm hover:bg-green-700'>Descargar CV</button>
+    <button onClick={handleDownload} className='rounded-2xl border border-green-700 p-3 text-sm hover:bg-green-700'>{t('boton_descargar')}</button>
   );
 };
 
