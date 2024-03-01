@@ -22,7 +22,6 @@ function Page() {
     <div className="h-screen w-screen overflow-x-hidden overflow-y-scroll bg-gradient-to-t from-customBlueGray_1 to-customBlueGray_2">
       <div>
         <Header />
-        {/* Aca abajo va mt-32 si hago andar el tema del header con la current section */}
         <div className="mb-16 mt-28 lg:flex lg:flex-row">
           <div className="lg:ml-20 mt-10 font-black text-white">
           <Reveal>
