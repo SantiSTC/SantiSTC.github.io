@@ -280,7 +280,7 @@ function Page() {
             <h3 className="mb-24 text-3xl font-black text-white">{t('titulo_contacto')}</h3>
           </Reveal>
         </div>
-        <div className='flex justify-start flex-row gap-10'>
+        <div className='flex justify-center flex-row gap-10'>
           <Reveal>
             <form action="https://formsubmit.co/863e586cb7b58db69694d0c99c7dfc57" method="POST" className='ml-28 border border-green-700 bg-customBlueGray_2 px-24 py-12 rounded-xl'>
               <div className="flex justify-center mb-10 text">
