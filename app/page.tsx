@@ -16,10 +16,11 @@ import { useTranslation } from 'react-i18next';
 import "../i18n"
 
 function page() { 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
-    <div className="h-screen w-screen overflow-x-hidden overflow-y-scroll bg-gradient-to-t from-customBlueGray_1 to-customBlueGray_2">
+    // feewfuefuwhfufhewfhewfewfgewfe7fgwefwegfefgewfwefewf7ewgf7ewgf78f
+    <div className="h-screen w-screen overflow-x-hidden overflow-y-scroll bg-customBlackBackground">
       <div>
         <Header />
         <div className="mb-16 mt-14 lg:flex lg:flex-row flex justify-center">
@@ -27,13 +28,13 @@ function page() {
           <Reveal>
           <div className="flex flex-row gap-1.5 text-sm">
               <h4 className="">{t('hola')}</h4>
-              <h4 className="text-green-700">{t('presentacion')}</h4>
+              <h4 className="text-customGreen">{t('presentacion')}</h4>
             </div>
           </Reveal>
             <br />
           <Reveal>
             <div className="flex flex-row gap-5 text-6xl">
-                <h1 className="text-green-700">{t('nombre')}</h1>
+                <h1 className="text-customGreen">{t('nombre')}</h1>
                 <h1>{t('apellido')}</h1>
               </div>
           </Reveal>
@@ -251,7 +252,7 @@ function page() {
                 <div className='h-px w-36 bg-gray-200 rotate-90 mt-16'></div>
                   <div className='mt-4'>
                     <p className='font-black text-lg'>{t('universidad')}</p>
-                    <p className='font-extrabold text-base text-green-700'><Link href={"https://fra.utn.edu.ar/tecnicatura-universitaria/"}>{t('carrera')}</Link></p>
+                    <p className='font-extrabold text-base text-customGreen'><Link href={"https://fra.utn.edu.ar/tecnicatura-universitaria/"}>{t('carrera')}</Link></p>
                     <p className='font-semibold text-sm'>{t('facultad')}</p>
                     <p className='font-semibold text-base'>{t('periodo')}</p>
                   </div>
@@ -274,7 +275,7 @@ function page() {
         </div>
         <div className='flex justify-center flex-row gap-10'>
           <Reveal>
-            <form action="https://formsubmit.co/863e586cb7b58db69694d0c99c7dfc57" method="POST" className='border border-green-700 bg-customBlueGray_2 px-24 py-12 rounded-xl'>
+            <form action="https://formsubmit.co/863e586cb7b58db69694d0c99c7dfc57" method="POST" className='border border-customGreen bg-customBoxBack px-24 py-12 rounded-xl'>
               <div className="flex justify-center mb-10 text">
                 <p className="mb-3 text-xl font-bold text-white">
                   {t('titulo_form')}
@@ -290,7 +291,7 @@ function page() {
                     id={"mensaje"}
                     name={"mensaje"}
                     placeholder={t('form_mensaje_title')}
-                    className={`text-sm flex align-top mt-1 pb-32 w-72 break-words rounded-lg border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none focus:scale-110 transition-transform`}
+                    className={`text-sm flex align-top mt-1 pb-32 w-72 break-words rounded-lg border-none bg-customBlackBackground p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none focus:scale-110 transition-transform`}
                   />
                 </div>
               </div>
@@ -304,7 +305,7 @@ function page() {
               <div className='flex justify-center flex-col mt-8'>
                 <div className='flex flex-row gap-2'>
                   <p className='flex mt-4 font-bold text-xl text-white'>{t('contacto_telefono')}</p>
-                  <p className='flex mt-4 font-bold text-xl text-green-700'>{t('contacto_whatsapp')}</p>
+                  <p className='flex mt-4 font-bold text-xl text-customGreen'>{t('contacto_whatsapp')}</p>
                 </div>
                 <div className='w-full flex justify-center mt-14'>
                   <Link href={"https://api.whatsapp .com/send/?phone=5492944798893&text&type=phone_number&app_absent=0"} className='flex'>
@@ -333,11 +334,11 @@ function page() {
             <p className='flex justify-center mt-5 text-sm'>{t('footer_iconos')}</p>
             <div className='flex flex-row justify-center mt-5 gap-1'>
               <p className='text-base'>{t('footer_creador')}</p>
-              <Link href={"https://github.com/SantiSTC"}  className='flex justify-center text-green-700 text-base'>github.com/SantiSTC</Link>
+              <Link href={"https://github.com/SantiSTC"}  className='flex justify-center text-customGreen text-base'>github.com/SantiSTC</Link>
             </div>
             <div className='flex justify-center mt-5'>
               <Image
-                src="/logos/letra-s-verde.png"
+                src="/logos/letra-s-verdeClaro.png"
                 alt=""
                 width={60}
                 height={60}

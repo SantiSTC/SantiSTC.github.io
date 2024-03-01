@@ -25,12 +25,12 @@ function Caja({
   };
 
   return (
-    <div className={`h-72 flex flex-col w-60 rounded-lg bg-gray-900 text-white shadow-2xl hover:scale-110 transition-transform`}>
+    <div className={`h-72 flex flex-col w-60 rounded-lg bg-customBoxBack text-white shadow-2xl hover:scale-110 transition-transform`}>
       <div className="flex justify-center">
         <p className="mb-2 mt-4 text-sm font-bold">{title}</p>
       </div>
       <div className="ml-4 mr-4">
-        <p className="mb-2 font-semibold italic text-green-700 text-xs">{position}</p>
+        <p className="mb-2 font-semibold italic text-customGreen text-xs">{position}</p>
         <p className="leading-relaxed text-xs">{description}</p>
         
       </div>
@@ -41,7 +41,7 @@ function Caja({
             <Image key={index} src={image} alt={''} width={20} height={20} />
           ))}
         </div>
-        <Link href={repository} className="ml-4 mt-4 underline text-xs hover:text-green-700">
+        <Link href={repository} className="ml-4 mt-4 underline text-xs hover:text-customGreen">
           {t('experiencia_vermas')}
         </Link>
       </div>

@@ -23,7 +23,7 @@ function Header() {
     <div>
     <header className="z-20 left-0 top-0 flex h-20 w-screen flex-row items-center justify-between gap-7 bg-transparent text-white">
       <Image
-        src="/logos/letra-s-verde.png"
+        src="/logos/letra-s-verdeClaro.png"
         alt=""
         width={55}
         height={55}

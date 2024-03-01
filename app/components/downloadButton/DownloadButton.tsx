@@ -20,7 +20,7 @@ const DownloadButton = () => {
   };
 
   return (
-    <button onClick={handleDownload} className='rounded-2xl border border-green-700 p-3 text-sm hover:bg-green-700'>{t('boton_descargar')}</button>
+    <button onClick={handleDownload} className='rounded-2xl border border-customGreen p-3 text-sm hover:bg-customGreen'>{t('boton_descargar')}</button>
   );
 };
 

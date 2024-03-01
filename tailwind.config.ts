@@ -22,6 +22,11 @@ const config: Config = {
         },
         customBlueGray_1: '#1f2933',
         customBlueGray_2: '#192229',
+        customBlackBackground: '#131313',
+        customGreen: '#00AC7C',
+        customGreenDark: '#008D67',
+        customBoxBack: '#191919',
+        customSand: '#BDBDBD',
       },
     },
     keyframes: {
