@@ -281,7 +281,7 @@ function Page() {
         </div>
         <div className='flex justify-center flex-row gap-10'>
           <Reveal>
-            <form action="https://formsubmit.co/863e586cb7b58db69694d0c99c7dfc57" method="POST" className='ml-28 border border-green-700 bg-customBlueGray_2 px-24 py-12 rounded-xl'>
+            <form action="https://formsubmit.co/863e586cb7b58db69694d0c99c7dfc57" method="POST" className='border border-green-700 bg-customBlueGray_2 px-24 py-12 rounded-xl'>
               <div className="flex justify-center mb-10 text">
                 <p className="mb-6 text-xl font-bold text-white">
                   {t('titulo_form')}
