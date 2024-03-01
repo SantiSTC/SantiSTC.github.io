@@ -49,7 +49,7 @@ function Header() {
             id="selectIdioma"
             onChange={(e) => cambiarIdioma(e.target.value)}
             value={i18n.language}
-            className='h-8 bg-transparent focus:bg-customBlueGray_2 text-xs border-none focus:outline-none'
+            className='h-8 bg-transparent focus:bg-customBlackBackground text-xs border-none focus:outline-none'
           >
             <option value="es">Español</option>
             <option value="en">English</option>
