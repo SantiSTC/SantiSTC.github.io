@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <div>
-    <header className="fixed z-20 left-0 top-0 flex h-20 w-screen flex-row items-center justify-between gap-7 bg-transparent text-white backdrop-blur-md">
+    <header className="z-20 left-0 top-0 flex h-20 w-screen flex-row items-center justify-between gap-7 bg-transparent text-white">
       <Image
         src="/logos/letra-s-verde.png"
         alt=""
@@ -30,7 +30,7 @@ function Header() {
         className="ml-2"
         id='logo-verde'
       />
-      <p className="text-3xl text-white ml-52" style={{ letterSpacing: '0.4em' }}>
+      <p className="text-xl text-white ml-52" style={{ letterSpacing: '0.3em' }}>
         {t('header_titulo')}
       </p>
       <div className="mr-8 flex flex-row gap-5">

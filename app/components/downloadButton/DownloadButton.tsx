@@ -1,3 +1,4 @@
+"use client"
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -13,7 +14,10 @@ const DownloadButton = () => {
     link.click();
   };
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cambiarIdioma = (nuevoIdioma:string) => {
+    i18n.changeLanguage(nuevoIdioma);
+  };
 
   return (
     <button onClick={handleDownload} className='rounded-2xl border border-green-700 p-3 text-sm hover:bg-green-700'>{t('boton_descargar')}</button>

@@ -19,19 +19,23 @@ function Caja({
   repository,
   images,
 }: Props) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cambiarIdioma = (nuevoIdioma:string) => {
+    i18n.changeLanguage(nuevoIdioma);
+  };
 
   return (
-    <div className={`h-72 w-60 flex flex-col rounded-lg bg-gray-900 text-white shadow-2xl hover:scale-110 transition-transform`}>
+    <div className={`h-72 flex flex-col w-60 rounded-lg bg-gray-900 text-white shadow-2xl hover:scale-110 transition-transform`}>
       <div className="flex justify-center">
         <p className="mb-2 mt-4 text-sm font-bold">{title}</p>
       </div>
       <div className="ml-4 mr-4">
         <p className="mb-2 font-semibold italic text-green-700 text-xs">{position}</p>
         <p className="leading-relaxed text-xs">{description}</p>
+        
       </div>
-      <div className="ml-4 mt-auto mb-2">
-        <p className="mb-6 mt-3 text-xs">{t('experiencia_manejode')}</p>
+      <div className='mt-auto mb-2'>
+        <p className="ml-4 mb-6 mt-3 text-xs">{t('experiencia_manejode')}</p>
         <div className="flex flex-row justify-center gap-3 mb-4">
           {images?.map((image, index) => (
             <Image key={index} src={image} alt={''} width={20} height={20} />

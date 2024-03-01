@@ -24,7 +24,6 @@
     "experiencia_manejode": "Manejo de:",
     "experiencia_vermas": "Ver mas aca.",
     "titulo_tecnologias": "Tecnologias",
-    "desc_tecnologias": "Estas son las tecnologias que manejo",
     "titulo_habilidades": "Habilidades personales",
     "habilidades_proactividad": "Proactividad",
     "habilidades_autodidaxia": "Autotodidaxia",
@@ -45,15 +44,17 @@
     "periodo": "2022 - actualidad.",
     "titulo_contacto": "Contacto",
     "titulo_form": "Enviame un email",
+    "form_nombre_title": "Nombre",
     "form_nombre_placeholder": "Nombre",
+    "form_email_title": "Correo",
     "form_email_placeholder": "Correo electronico",
+    "form_asunto_title": "Asunto",
     "form_asunto_placeholder": "Asunto",
-    "form_mensaje_placeholder": "Mensaje",
+    "form_mensaje_title": "Mensaje",
     "form_button_text": "Enviar",
     "contacto_telefono": "O contactame por",
     "contacto_whatsapp": "Whatsapp",
     "footer_dueno": "Santiago Iannello © 2024",
     "footer_iconos": "Iconos por flaticon.es",
     "footer_creador": "Desarrollado y diseñado por y para"
-
 }

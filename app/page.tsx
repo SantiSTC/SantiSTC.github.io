@@ -2,28 +2,28 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Flecha from './components/flecha/Flecha';
-import Header from './components/header/Header';
-import Linea from './components/linea/Linea';
-import Caja from './components/caja/Caja';
-import DownloadButton from './components/downloadButton/DownloadButton';
-import Logo from './components/logo/Logo';
-import CajaSmall from './components/cajasmall/CajaSmall';
+import Flecha from './components/Flecha/Flecha';
+import Header from './components/Header/Header';
+import Linea from './components/Linea/Linea';
+import Caja from './components/Caja/Caja';
+import DownloadButton from './components/DownloadButton/DownloadButton';
+import Logo from './components/Logo/Logo';
+import CajaSmall from './components/CajaSmall/CajaSmall';
 import FormInputs from './components/FormInputs/FormInputs';
 import Button from './components/Button/Button';
 import { Reveal } from './components/Reveal/Reveal';
 import { useTranslation } from 'react-i18next';
 import "../i18n"
 
-function Page() { 
-  const { t } = useTranslation();
+function page() { 
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="h-screen w-screen overflow-x-hidden overflow-y-scroll bg-gradient-to-t from-customBlueGray_1 to-customBlueGray_2">
       <div>
         <Header />
-        <div className="mb-16 mt-28 lg:flex lg:flex-row">
-          <div className="lg:ml-20 mt-10 font-black text-white">
+        <div className="mb-16 mt-14 lg:flex lg:flex-row flex justify-center">
+          <div className="mt-10 font-black text-white">
           <Reveal>
           <div className="flex flex-row gap-1.5 text-sm">
               <h4 className="">{t('hola')}</h4>
@@ -66,7 +66,7 @@ function Page() {
                   alt={''}
                   width={320}
                   height={320}
-                  className="rounded-full transition duration-300 ease-in-out shadow-xl hover:scale-110 transition-transform"
+                  className="rounded-full shadow-xl hover:scale-110 transition-transform"
                 />
               </Link>
             </div>
@@ -163,13 +163,6 @@ function Page() {
               <h3 className="mb-24 text-3xl font-black text-white">
                 {t('titulo_tecnologias')}
               </h3>
-            </Reveal>
-          </div>
-          <div className="flex justify-center">
-            <Reveal>
-              <p className="mb-20 text-lg font-bold text-white border border-green-700 p-4 rounded-xl">
-                {t('desc_tecnologias')}
-              </p>
             </Reveal>
           </div>
           <div className="mb-24 flex justify-center">
@@ -283,21 +276,21 @@ function Page() {
           <Reveal>
             <form action="https://formsubmit.co/863e586cb7b58db69694d0c99c7dfc57" method="POST" className='border border-green-700 bg-customBlueGray_2 px-24 py-12 rounded-xl'>
               <div className="flex justify-center mb-10 text">
-                <p className="mb-6 text-xl font-bold text-white">
+                <p className="mb-3 text-xl font-bold text-white">
                   {t('titulo_form')}
                 </p>
               </div>
-              <FormInputs id={'nombre'} name={'nombre'} placeholder={t('form_nombre_placeholder')} type={'text'} />
-              <FormInputs id={'email'} name={'email'} placeholder={t('form_email_placeholder')} type={'email'} />
-              <FormInputs id={'asunto'} name={'asunto'} placeholder={t('form_asunto_placeholder')} type={'text'} />
+              <FormInputs title={t('form_nombre_title')} id={'nombre'} name={'nombre'} placeholder={t('form_nombre_placeholder')} type={'text'} />
+              <FormInputs title={t('form_email_title')} id={'email'} name={'email'} placeholder={t('form_email_placeholder')} type={'email'} />
+              <FormInputs title={t('form_asunto_title')} id={'asunto'} name={'asunto'} placeholder={t('form_asunto_placeholder')} type={'text'} />
               <div className="mb-8 flex flex-col">
-                <div className='flex flex-col'>
+                <div className='flex flex-col text-sm'>
                   <input
                     type={"text"}
                     id={"mensaje"}
                     name={"mensaje"}
-                    placeholder={t('form_mensaje_placeholder')}
-                    className={`text-sm align-top mt-1 pb-32 w-72 rounded-md border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none focus:scale-110 transition-transform`}
+                    placeholder={t('form_mensaje_title')}
+                    className={`text-sm flex align-top mt-1 pb-32 w-72 break-words rounded-lg border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none focus:scale-110 transition-transform`}
                   />
                 </div>
               </div>
@@ -358,4 +351,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default page;

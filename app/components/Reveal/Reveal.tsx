@@ -13,16 +13,12 @@ export const Reveal = ({children, width = "fit-content"}: Props) => {
     const mainControls = useAnimation();
     const slideControls = useAnimation();
 
-    /* eslint-disable react-hooks/exhaustive-deps */
-
     useEffect(() => {
         if(isInView) {
             mainControls.start("visible");
             slideControls.start("visible");
         }
     },[isInView]);
-
-    /* eslint-enable react-hooks/exhaustive-deps */
 
     return(
         <div ref={ref} className={`relative`} style={{width}} >
