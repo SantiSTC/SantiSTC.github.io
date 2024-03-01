@@ -9,6 +9,7 @@ function Header() {
   const { t, i18n } = useTranslation();
   const cambiarIdioma = (nuevoIdioma:string) => {
     i18n.changeLanguage(nuevoIdioma);
+    localStorage.setItem('language', nuevoIdioma);
   };
 
   return (
