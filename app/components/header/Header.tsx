@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
@@ -7,10 +6,18 @@ import "../../../i18n"
 
 function Header() {
   const { t, i18n } = useTranslation();
+
+  const banderas = {
+    es: '/icons/argentina.png',
+    en: '/icons/reino-unido.png',
+  };
+
   const cambiarIdioma = (nuevoIdioma:string) => {
     i18n.changeLanguage(nuevoIdioma);
     localStorage.setItem('language', nuevoIdioma);
   };
+
+  const idiomaActual = i18n.language as keyof typeof banderas;
 
   return (
     <div>
@@ -27,8 +34,17 @@ function Header() {
         {t('header_titulo')}
       </p>
       <div className="mr-8 flex flex-row gap-5">
-        <div>
-          <label htmlFor='selectIdioma' className='pt-1 text-sm'>{t('header_idioma')}</label>
+        <div className='flex flex-row gap-2'>
+          {banderas[idiomaActual] && (
+            <Image
+              src={banderas[idiomaActual]}
+              alt={`Bandera ${idiomaActual}`}
+              width={25}
+              height={25}
+              className='m-auto'
+            />
+          )}
+
           <select
             id="selectIdioma"
             onChange={(e) => cambiarIdioma(e.target.value)}
