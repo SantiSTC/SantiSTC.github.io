@@ -67,7 +67,7 @@ function Page() {
                   alt={''}
                   width={320}
                   height={320}
-                  className="rounded-full transition duration-300 ease-in-out shadow-xl"
+                  className="rounded-full transition duration-300 ease-in-out shadow-xl hover:scale-110 transition-transform"
                 />
               </Link>
             </div>
