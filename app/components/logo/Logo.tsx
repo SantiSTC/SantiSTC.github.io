@@ -6,7 +6,7 @@ interface Props {
 
 function Logo({path}:Props) {
   return (
-    <Image src={path} alt={''} width={75} height={75} className='hover:rotate-6'/>
+    <Image src={path} alt={''} width={75} height={75} className='hover:scale-110 transition-transform'/>
   )
 }
 

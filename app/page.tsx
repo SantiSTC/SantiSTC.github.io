@@ -298,7 +298,7 @@ function Page() {
                     id={"mensaje"}
                     name={"mensaje"}
                     placeholder={t('form_mensaje_placeholder')}
-                    className={`text-sm align-top mt-1 pb-32 w-72 rounded-md border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none`}
+                    className={`text-sm align-top mt-1 pb-32 w-72 rounded-md border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none focus:scale-110 transition-transform`}
                   />
                 </div>
               </div>
@@ -316,7 +316,7 @@ function Page() {
                 </div>
                 <div className='w-full flex justify-center mt-14'>
                   <Link href={"https://api.whatsapp .com/send/?phone=5492944798893&text&type=phone_number&app_absent=0"} className='flex'>
-                    <Image src={'/icons/wpp.png'} alt={''} width={80} height={80}/>
+                    <Image src={'/icons/wpp.png'} alt={''} width={80} height={80} className='hover:scale-110 transition-transform'/>
                   </Link>
                 </div>
                 <div className='w-full flex justify-center mt-4'>
