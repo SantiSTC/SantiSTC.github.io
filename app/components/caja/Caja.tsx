@@ -22,7 +22,7 @@ function Caja({
   const { t } = useTranslation();
 
   return (
-    <div className={`h-72 w-60 flex flex-col rounded-lg bg-gray-900 text-white shadow-2xl hover:border border-green-700`}>
+    <div className={`h-72 w-60 flex flex-col rounded-lg bg-gray-900 text-white shadow-2xl hover:scale-110 transition-transform`}>
       <div className="flex justify-center">
         <p className="mb-2 mt-4 text-sm font-bold">{title}</p>
       </div>
