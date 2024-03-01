@@ -1,5 +1,4 @@
 interface Props {
-  title: string;
   id: string;
   name: string;
   placeholder: string;
@@ -7,7 +6,6 @@ interface Props {
 }
 
 function FormInputs({
-  title,
   id,
   name,
   placeholder,

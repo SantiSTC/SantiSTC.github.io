@@ -227,6 +227,10 @@ function Page() {
                 <CajaSmall title={t('habilidades_comunicacion')} />
                 <CajaSmall title={t('habilidades_resiliencia')} />
                 <CajaSmall title={t('habilidades_aprender')} />
+                <CajaSmall title={t('habilidades_metodicidad')} />
+                <CajaSmall title={t('habilidades_organizacion')} />
+                <CajaSmall title={t('habilidades_eficiencia')} />
+                <CajaSmall title={t('habilidades_pensamiento')} />
                 <CajaSmall title={t('habilidades_scrum')} />
               </div>
             </Reveal>
@@ -284,17 +288,17 @@ function Page() {
                   {t('titulo_form')}
                 </p>
               </div>
-              <FormInputs title={t('form_nombre_title')} id={'nombre'} name={'nombre'} placeholder={t('form_nombre_placeholder')} type={'text'} />
-              <FormInputs title={t('form_email_title')} id={'email'} name={'email'} placeholder={t('form_email_placeholder')} type={'email'} />
-              <FormInputs title={t('form_asunto_title')} id={'asunto'} name={'asunto'} placeholder={t('form_asunto_placeholder')} type={'text'} />
+              <FormInputs id={'nombre'} name={'nombre'} placeholder={t('form_nombre_placeholder')} type={'text'} />
+              <FormInputs id={'email'} name={'email'} placeholder={t('form_email_placeholder')} type={'email'} />
+              <FormInputs id={'asunto'} name={'asunto'} placeholder={t('form_asunto_placeholder')} type={'text'} />
               <div className="mb-8 flex flex-col">
                 <div className='flex flex-col'>
                   <input
                     type={"text"}
                     id={"mensaje"}
                     name={"mensaje"}
-                    placeholder={t('form_mensaje_title')}
-                    className={`text-sm align-top mt-1 pb-32 w-72 text-sm rounded-md border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none`}
+                    placeholder={t('form_mensaje_placeholder')}
+                    className={`text-sm align-top mt-1 pb-32 w-72 rounded-md border-none bg-gray-800 p-2 text-white shadow-md focus:placeholder-transparent focus:outline-none`}
                   />
                 </div>
               </div>
